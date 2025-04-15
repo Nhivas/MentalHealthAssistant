@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DoomScroll Guard</string>
+    <string name="start_button">Start Monitoring</string>
+    <string name="timer_hint">Enter minutes (e.g. 30)</string>
+    <string name="accessibility_service_label">DoomScroll Detection</string>
+    <string name="accessibility_service_description">DoomScroll Detection</string>
+    <string name="notification_channel_name">DoomScroll Alerts</string>
+</resources>
