@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var startButton: Button
     private lateinit var stopButton: Button
     private lateinit var statusText: TextView
+    private lateinit var chatbotButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         startButton = findViewById(R.id.startButton)
         stopButton = findViewById(R.id.stopButton)
         statusText = findViewById(R.id.statusText)
+        chatbotButton = findViewById(R.id.chatbotButton)
 
         // Set previously saved timer value (optional)
         val prefs = getSharedPreferences("doomscroll_prefs", Context.MODE_PRIVATE)
@@ -56,6 +58,12 @@ class MainActivity : AppCompatActivity() {
         // Stop button logic
         stopButton.setOnClickListener {
             stopDoomscrollService()
+        }
+
+        // Chatbot button logic
+        chatbotButton.setOnClickListener {
+            val intent = Intent(this, ChatbotActivity::class.java)
+            startActivity(intent)
         }
     }
 

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
-    tools:context=".MainActivity">
+    android:padding="24dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/timer_hint"
+        android:hint="Enter Time in Minutes"
         android:inputType="number"
         android:importantForAutofill="no"/>
 
@@ -28,15 +26,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/start_button"/>
+        android:text="Start Monitoring"/>
 
     <Button
         android:id="@+id/stopButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stop Monitoring"
-        android:layout_marginTop="16dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="16dp"/>
 
     <TextView
         android:id="@+id/statusText"
@@ -46,6 +43,17 @@
         android:text="Status: Inactive"
         android:textColor="#888"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
+    <Button
+        android:id="@+id/chatbotButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Talk to AI Mental Assistant"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>
